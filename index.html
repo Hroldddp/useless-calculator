@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: black;
+                box-sizing: border-box;
+                font-family: Arial;
+                color: white;
+            }
+
+            input, button {
+                border: transparent;
+                outline: 0;
+            }
+
+            input {
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+
+            ::placeholder {
+                color: black;
+            }
+
+            p {
+                font-weight: bolder;
+            }
+
+            button {
+                cursor: pointer;
+                display: block;
+                width: 130px;
+                height: 20px;
+            }
+        </style>
+        <title>REAL CALCULATOR</title>
+    </head>
+    <body>
+        <h3>Calculator 1.0</h3>
+        <input type="number" placeholder="Enter a number">
+        <p>+</p>
+        <input type="number" placeholder="Enter a number">
+        <button onclick="result();">=</button>
+        <p id="answer">Result: </p>
+        <script>
+            function result() {
+                document.getElementById("answer").innerText = 'Result: Miss ko na siya';
+            }
+        </script>
+    </body>
+</html>
